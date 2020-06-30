@@ -1,6 +1,6 @@
 import React from 'react'
-
-
+import Cutbtn from '../img/cut_btn.svg'
+import Playerbtn from "../img/plyerbtn.png"
 const Modal=(props)=>{
       return(
           <section id="modal">
@@ -17,17 +17,17 @@ const Modal=(props)=>{
                 </div>} */}
                 {props.hover?
                 <div className="player_btn" style={{opacity:'1',transition:'all 0.5s linear'}}>
-                   <a href={props.youtube} target="_blank"><img src="../src/img/plyerbtn.png"/></a> 
+                   <a href={props.youtube} target="_blank"><img src={Playerbtn}/></a> 
                 </div>:
                 <div className="player_btn" style={{opacity:'0'}}>
-                    <img src="../src/img/plyerbtn.png"/>
+                    <img src={Playerbtn}/>
                 </div>} 
 
               </div>
                 
               </div>
               <div className="defination_item">
-               <img src="../src/img/cut_btn.svg"  alt="exit_btn" style={{width:'3em'}} onClick={props.handlebtnclick}/>
+               <img src={Cutbtn}  alt="exit_btn" style={{width:'3em'}} onClick={props.handlebtnclick}/>
          
                <div className="div1">
       <h3><span>dish name</span> :{props.dishname}</h3> 

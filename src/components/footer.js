@@ -1,5 +1,8 @@
 import React from 'react'
-
+import Facebookicon from '../img/facebook_icon.svg'
+import Instaicon from '../img/insta_icon.svg'
+import Linkdinicon from '../img/linkdin_icon.png'
+import Googleicon from '../img/google_icon.png'
 class Footer extends React.Component{
     render(){
         return(
@@ -16,10 +19,10 @@ class Footer extends React.Component{
                       </div>
                       </div>
                       <div className="footer_icon">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../src/img/facebook_icon.svg" alt="facebook_icon"/></a>    
-                      <a href="https://www.facebook.com/" target="_blank"><img src="../src/img/insta_icon.svg" alt="insta_icon"/></a>
-                       <a href="https://www.linkedin.com/" target="_blank"> <img src="../src/img/linkdin_icon.png" alt="linkdin_icon"/></a>
-                        <a href="https://www.google.com" target="_blank"> <img src="../src/img/google_icon.png" alt="google_icon"/></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src={Facebookicon} alt="facebook_icon"/></a>    
+                      <a href="https://www.facebook.com/" target="_blank"><img src={Instaicon} alt="insta_icon"/></a>
+                       <a href="https://www.linkedin.com/" target="_blank"> <img src={Linkdinicon} alt="linkdin_icon"/></a>
+                        <a href="https://www.google.com" target="_blank"> <img src={Googleicon} alt="google_icon"/></a>
                         </div>
                    </div>
                 </div>
